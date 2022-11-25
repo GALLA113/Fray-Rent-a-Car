@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_ajustes"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:id="@+id/btnPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/mi_perfil"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            app:icon="@drawable/ic_baseline_account_circle_24"
+            app:iconSize="35dp"
+            app:iconTint="@color/black"
+            android:onClick="Perfil"/>
+
+        <Button
+            android:id="@+id/btnMisAlquileres"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/ayuda_y_asistencia"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            app:icon="@drawable/ic_baseline_help_outline_24"
+            app:iconSize="35dp"
+            app:iconTint="@color/black"
+            android:onClick="AyudaYAsistencia"/>
+
+        <Button
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/cerrar_sesion"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            app:icon="@drawable/ic_baseline_logout_edge3"
+            app:iconSize="35dp"
+            app:iconTint="@color/black"
+            android:onClick="CerrarSesion"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ic_logoRentACar_background"
+        app:itemIconTint="@color/nav_icon_colors"
+        app:itemTextColor="@color/nav_text_colors"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

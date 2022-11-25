@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_home"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxBackgroundColor="@color/white"
+            app:boxCornerRadiusTopStart="30dp"
+            app:boxCornerRadiusTopEnd="30dp"
+            app:boxCornerRadiusBottomStart="30dp"
+            app:boxCornerRadiusBottomEnd="30dp"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/black"
+            app:hintTextAppearance="@style/HintTextAppearance"
+            app:boxStrokeColor="@color/black"
+            android:textColorHint="#877070"
+            android:hint="@string/busca_un_vehiculo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:drawableEnd="@drawable/ic_baseline_search_24"
+            android:maxLength="40"
+            tools:ignore="TextContrastCheck"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lista_de_vehiculos"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:padding="15dp"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button"
+                    android:layout_width="120dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:drawableTop="@drawable/standard"
+                    android:text="@string/standard_56"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:backgroundTint="@color/sv_btnColor"
+                    app:cornerRadius="10dp" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button2"
+                    android:layout_width="120dp"
+                    android:layout_height="180dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:drawableTop="@drawable/prestige"
+                    android:text="@string/prestige_22"
+                    app:backgroundTint="@color/sv_btnColor"
+                    app:cornerRadius="10dp" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button3"
+                    android:layout_width="120dp"
+                    android:layout_height="180dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:drawableTop="@drawable/suv"
+                    android:text="@string/suv_34"
+                    app:backgroundTint="@color/sv_btnColor"
+                    app:cornerRadius="10dp" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button4"
+                    android:layout_width="120dp"
+                    android:layout_height="180dp"
+                    android:textColor="@color/black"
+                    android:textSize="9sp"
+                    android:text="@string/proximamente"
+                    android:layout_gravity="center"
+                    app:backgroundTint="@color/sv_btnColor"
+                    app:cornerRadius="10dp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vehiculos_disponibles"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button5"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:text="@string/toyota_350"
+                    android:drawableBottom="@drawable/toyota"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:backgroundTint="@color/sv_btnColor"
+                    app:cornerRadius="10dp"
+                    android:onClick="Toyota"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button6"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:text="@string/hyundai_250"
+                    android:drawableBottom="@drawable/hyundai"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:backgroundTint="@color/sv_btnColor"
+                    app:cornerRadius="10dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button7"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:text="@string/proximamente"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:backgroundTint="@color/sv_btnColor"
+                    app:cornerRadius="10dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/ic_logoRentACar_background"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@color/nav_icon_colors"
+        app:itemTextColor="@color/nav_text_colors"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

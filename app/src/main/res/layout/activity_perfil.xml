@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:background="#304FFE">
+
+            <Button
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/back_button"
+                android:onClick="Regresar"
+                app:icon="@drawable/ic_baseline_arrow_back_24"
+                app:iconSize="30dp"
+                app:iconTint="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_perfil"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:paddingEnd="65dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sv_btnColor"
+            android:paddingStart="9dp"
+            android:text="@string/informacion_basica"
+            android:textColor="#616161" />
+
+        <Button
+            android:id="@+id/btnNombre"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/btnNombre"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            app:iconTint="@color/black"
+            android:onClick="Nombre"/>
+
+        <Button
+            android:id="@+id/btnUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/btnUsuario"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            app:iconTint="@color/black"
+            android:onClick="Usuario"/>
+
+        <Button
+            android:id="@+id/btnCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Correo electronico"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            app:iconTint="@color/black"
+            android:onClick="Correo"/>
+
+        <Button
+            android:id="@+id/btnTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/btntelefono"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            app:iconTint="@color/black"
+            android:onClick="Telefono"/>
+
+        <Button
+            android:id="@+id/btnContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/contraseña"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            app:iconTint="@color/black"
+            android:onClick="Contraseña"/>
+
+    </LinearLayout>
+</RelativeLayout>

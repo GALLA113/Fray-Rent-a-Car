@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/back_button"
+                android:onClick="Regresar"
+                app:icon="@drawable/ic_baseline_arrow_back_24"
+                app:iconSize="30dp"
+                app:iconTint="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_AyudaYAsistencia"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:paddingEnd="60dp"/>
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sv_btnColor"
+            android:paddingStart="9dp"
+            android:text="@string/terminos_y_condiciones"
+            android:textColor="#616161" />
+
+
+        <Button
+            android:id="@+id/btnC_Uso"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/condiciones_de_uso"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:onClick="CondicionesDeUso"/>
+
+        <Button
+            android:id="@+id/btnT_Servicio"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/terminos_del_servicio"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            app:iconTint="@color/black"
+            android:onClick="TerminosDelServicio"/>
+
+        <Button
+            android:id="@+id/btnP_Privacidad"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/politicas_de_privacidad"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            app:iconTint="@color/black"
+            android:onClick="PoliticasDePrivacidad"/>
+
+        <Button
+            android:id="@+id/btnVersion"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/acerca_de"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            app:iconTint="@color/black"
+            android:onClick="AcercaDe"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sv_btnColor"
+            android:paddingStart="9dp"
+            android:text="@string/ayuda"
+            android:textColor="#616161" />
+
+        <Button
+            android:id="@+id/btnContactanos"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/contactanos"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            app:iconTint="@color/black"/>
+
+    </LinearLayout>
+</RelativeLayout>

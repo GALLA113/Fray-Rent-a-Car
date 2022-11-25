@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#304FFE"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context=".IniciarSesion">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="231dp"
+        android:layout_height="165dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/logo"
+        app:srcCompat="@drawable/logo" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_IS_Usuario"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:hintEnabled="true"
+        app:hintTextColor="@color/black"
+        app:hintTextAppearance="@style/HintTextAppearance"
+        app:boxStrokeColor="@color/black"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        android:textColorHint="#877070"
+        android:hint="@string/nombre_de_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_IS_Contra"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:hintEnabled="true"
+        app:hintTextColor="@color/black"
+        app:hintTextAppearance="@style/HintTextAppearance"
+        app:boxStrokeColor="@color/black"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        android:textColorHint="#877070"
+        android:hint="@string/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="textPassword"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/tvMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:clickable="true"
+        android:onClick="ContraOlvidada"
+        android:text="@string/mensaje" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="@string/iniciarSesion"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:backgroundTint="@color/btnColor"
+        app:cornerRadius="30dp"
+        android:onClick="IniciarSesion"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="@string/registrarse"
+        app:backgroundTint="@color/btnColor"
+        app:cornerRadius="30dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:onClick="Registrarse"/>
+</LinearLayout>
